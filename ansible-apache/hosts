@@ -1,0 +1,2 @@
+[apache]
+172.173.219.124 ansible_ssh_user=azureuser
