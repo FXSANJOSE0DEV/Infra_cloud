@@ -1,4 +1,0 @@
-  - hosts: apache
-    tasks:
-      - name: run echo command
-        command: sudo yum install epel-release -y
