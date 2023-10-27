@@ -1,0 +1,15 @@
+- hosts: apache
+  become: true
+  #sudo: yes
+
+
+  tasks:
+    - name: Install the latest version of mariadb
+      ansible.builtin.yum:
+        name: mariadb-server
+        state: latest
+
+    - name: start mariadb
+      ansible.builtin.service:
+        name: mariadb.service
+        state: started
