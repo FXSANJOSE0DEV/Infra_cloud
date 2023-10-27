@@ -7,14 +7,14 @@
         name: httpd
         state: present
 
-    - name: Firewall config
-      firewalld:
-        service: "{{ item }}"
-        permanent: yes
-        state: enabled
-      with_items:
-        - http
-        - https
+#    - name: Firewall config
+#      firewalld:
+#        service: "{{ item }}"
+#        permanent: yes
+#        state: enabled
+#      with_items:
+#        - http
+#        - https
 
     - name: Start httpd
       systemd:
